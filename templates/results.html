@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Результаты анализа</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="container wide">
+    <nav class="toolbar">
+        <a class="button secondary" href="/">Новый анализ</a>
+        <a class="button" href="/download/{{ result.result_id }}/excel">
+            Скачать Excel
+        </a>
+        <a class="button" href="/download/{{ result.result_id }}/json">
+            Скачать JSON
+        </a>
+    </nav>
+
+    <section class="card">
+        <h1>Результаты анализа</h1>
+        <div class="metrics">
+            <div>
+                <strong>{{ result.documents|length }}</strong>
+                <span>документов</span>
+            </div>
+            <div>
+                <strong>
+                    {{ result.checks|selectattr("status", "equalto", "ok")|list|length }}
+                </strong>
+                <span>успешных проверок</span>
+            </div>
+            <div>
+                <strong>
+                    {{ result.checks|selectattr("status", "equalto", "error")|list|length }}
+                </strong>
+                <span>ошибок</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Проверки</h2>
+        {% for check in result.checks %}
+            <div class="message {{ check.status }}">
+                <strong>{{ check.name }}</strong>
+                <span>{{ check.message }}</span>
+            </div>
+        {% endfor %}
+    </section>
+
+    {% for document in result.documents %}
+        <section class="card">
+            <h2>{{ document.document_type_label_ru }}</h2>
+            <p class="muted">
+                {{ document.filename }} ·
+                {{ document.page_count }} стр. ·
+                классификация {{ document.classification_confidence }}
+            </p>
+
+            {% if not document.fields %}
+                <div class="message error">
+                    Поля не извлечены. Документ распознан, но шаблон ещё не поддержан.
+                </div>
+            {% else %}
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Поле</th>
+                            <th>Значение</th>
+                            <th>Стр.</th>
+                            <th>Тип</th>
+                            <th>Цитата</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for field in document.fields %}
+                            <tr>
+                                <td>{{ field.label_ru }}</td>
+                                <td>
+                                    {% if field.value is mapping %}
+                                        <pre>{{ field.value | tojson(indent=2) }}</pre>
+                                    {% elif field.value is sequence and field.value is not string %}
+                                        <pre>{{ field.value | tojson(indent=2) }}</pre>
+                                    {% else %}
+                                        {{ field.value }}
+                                    {% endif %}
+                                </td>
+                                <td>{{ field.page or "—" }}</td>
+                                <td>
+                                    <span class="badge">
+                                        {{ field.value_type }}
+                                    </span>
+                                </td>
+                                <td>
+                                    {% if field.quote %}
+                                        <details>
+                                            <summary>Показать</summary>
+                                            <p>{{ field.quote }}</p>
+                                        </details>
+                                    {% else %}
+                                        —
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        </section>
+    {% endfor %}
+</main>
+</body>
+</html>
