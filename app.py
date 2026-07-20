@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 import json
@@ -268,6 +267,22 @@ def save_json(result: dict, path: Path):
     path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def safe_sheet_title(raw_title: str, existing_titles: list[str]) -> str:
+    # Excel forbids these characters in worksheet names: \ / * ? : [ ]
+    title = re.sub(r'[\\/*?:\[\]]', ' - ', raw_title)
+    title = ' '.join(title.split()).strip(" '")
+    title = title[:31] or "Документ"
+
+    base_title = title
+    counter = 2
+    while title in existing_titles:
+        suffix = f" ({counter})"
+        title = f"{base_title[:31-len(suffix)]}{suffix}"
+        counter += 1
+
+    return title
+
+
 def save_excel(result: dict, path: Path):
     wb = Workbook()
     ws = wb.active
@@ -281,7 +296,8 @@ def save_excel(result: dict, path: Path):
     ws.append(["Проверок", len(result["checks"])])
 
     for doc in result["documents"]:
-        sheet = wb.create_sheet(doc["document_type_label_ru"][:31])
+        sheet_title = safe_sheet_title(doc["document_type_label_ru"], wb.sheetnames)
+        sheet = wb.create_sheet(sheet_title)
         sheet.append(["Поле", "Значение", "Страница", "Тип", "Уверенность", "Цитата"])
         for c in sheet[1]:
             c.fill = fill
