@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.venv/
-venv/
-instance/*
-!instance/.gitkeep
-instance/ocr_cache/
-instance/results/
