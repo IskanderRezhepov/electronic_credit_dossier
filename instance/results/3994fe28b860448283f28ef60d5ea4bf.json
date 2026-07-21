@@ -1,0 +1,94 @@
+{
+  "result_id": "3994fe28b860448283f28ef60d5ea4bf",
+  "documents": [
+    {
+      "filename": "F-1343111332_Акт приема передачи №1 к Договору купли-продажи для последующей передачи в фин. лизинг №25-CL-28-10 от 28 октября 2022г.pdf",
+      "source_type": "pdf",
+      "page_count": 2,
+      "used_ocr": true,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "char_count": 3305,
+          "quality": 0.77
+        },
+        {
+          "page": 2,
+          "method": "ocr",
+          "char_count": 476,
+          "quality": 0.75
+        }
+      ],
+      "document_type": "acceptance_act",
+      "document_type_label_ru": "Акт приёма-передачи",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "акт приема",
+        "акт приема передачи",
+        "акт приёма",
+        "акт приёма передачи",
+        "приема передачи",
+        "продавец передает"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "purchase_contract",
+          "label_ru": "Договор купли-продажи для последующей передачи в финансовый лизинг",
+          "score": 10.4
+        },
+        {
+          "key": "lease_contract",
+          "label_ru": "Договор финансового лизинга / заявление о присоединении",
+          "score": 8.0
+        },
+        {
+          "key": "invoice",
+          "label_ru": "Счёт / счёт на оплату / счёт-фактура",
+          "score": 3.0
+        }
+      ],
+      "fields": [
+        {
+          "name": "linked_purchase_contract",
+          "label_ru": "Связанный договор купли-продажи",
+          "value": "25/С1",
+          "page": 1,
+          "quote": "«28» казан 2022 жылеы №25/С1/28-10 Keitin каржылык лизингке) тауарды сатыш алу-сату шартына жасалеан — : Ne 1 КАБЫЛДАУ-ОТКТЗУ AKTICI / AKT ПРИЕМА-ПЕРЕДАЧИ №1 wee к Договору купли-продажи для последующей передачи в финансовый лизинг №25/С1,/28-10 от 28 октября 2022г. Атырау K., «Oh» {{ 2022 ж. Будан кейн «Сатушы» gen аталатын «Альмед» жауапкериили! шектеул! серйктести! атынан 2015 жылеы 15 кыркуйектег! Nel буйрыктын",
+          "confidence": 0.77,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "act_package_detected",
+          "label_ru": "Пакет актов",
+          "value": "Да",
+          "page": null,
+          "quote": "Имя файла: F-1343111332__No1_-_._No25-CL-28-10_28_2022.pdf",
+          "confidence": 0.88,
+          "extraction_method": "calculated",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": "Документ содержит несколько актов; единый номер пакета может отсутствовать."
+        },
+        {
+          "name": "money_candidates",
+          "label_ru": "Другие денежные суммы",
+          "value": [
+            "25823520.00"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.62,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Это дополнительные суммы, не выбранные как итоговые поля. Показаны 1 из 1."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

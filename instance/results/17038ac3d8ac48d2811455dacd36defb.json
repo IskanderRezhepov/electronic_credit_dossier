@@ -1,0 +1,281 @@
+{
+  "result_id": "17038ac3d8ac48d2811455dacd36defb",
+  "documents": [
+    {
+      "filename": "F187994017_ДКП 30-05 финиш.pdf",
+      "source_type": "pdf",
+      "page_count": 22,
+      "used_ocr": true,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "char_count": 3705,
+          "quality": 0.79
+        },
+        {
+          "page": 2,
+          "method": "ocr",
+          "char_count": 4353,
+          "quality": 0.74
+        },
+        {
+          "page": 3,
+          "method": "ocr",
+          "char_count": 4069,
+          "quality": 0.8
+        },
+        {
+          "page": 4,
+          "method": "ocr",
+          "char_count": 3977,
+          "quality": 0.73
+        },
+        {
+          "page": 5,
+          "method": "ocr",
+          "char_count": 4356,
+          "quality": 0.75
+        },
+        {
+          "page": 6,
+          "method": "ocr",
+          "char_count": 4235,
+          "quality": 0.74
+        },
+        {
+          "page": 7,
+          "method": "ocr",
+          "char_count": 4268,
+          "quality": 0.75
+        },
+        {
+          "page": 8,
+          "method": "ocr",
+          "char_count": 4188,
+          "quality": 0.74
+        },
+        {
+          "page": 9,
+          "method": "ocr",
+          "char_count": 4155,
+          "quality": 0.76
+        },
+        {
+          "page": 10,
+          "method": "ocr",
+          "char_count": 4055,
+          "quality": 0.73
+        },
+        {
+          "page": 11,
+          "method": "ocr",
+          "char_count": 4076,
+          "quality": 0.76
+        },
+        {
+          "page": 12,
+          "method": "ocr",
+          "char_count": 4312,
+          "quality": 0.75
+        },
+        {
+          "page": 13,
+          "method": "ocr",
+          "char_count": 2115,
+          "quality": 0.81
+        },
+        {
+          "page": 14,
+          "method": "ocr",
+          "char_count": 676,
+          "quality": 0.83
+        },
+        {
+          "page": 15,
+          "method": "ocr",
+          "char_count": 918,
+          "quality": 0.82
+        },
+        {
+          "page": 16,
+          "method": "ocr",
+          "char_count": 4154,
+          "quality": 0.8
+        },
+        {
+          "page": 17,
+          "method": "ocr",
+          "char_count": 4929,
+          "quality": 0.76
+        },
+        {
+          "page": 18,
+          "method": "ocr",
+          "char_count": 4346,
+          "quality": 0.77
+        },
+        {
+          "page": 19,
+          "method": "ocr",
+          "char_count": 4409,
+          "quality": 0.76
+        },
+        {
+          "page": 20,
+          "method": "ocr",
+          "char_count": 4818,
+          "quality": 0.76
+        },
+        {
+          "page": 21,
+          "method": "ocr",
+          "char_count": 570,
+          "quality": 0.75
+        },
+        {
+          "page": 22,
+          "method": "ocr",
+          "char_count": 72,
+          "quality": 0.52
+        }
+      ],
+      "document_type": "purchase_contract",
+      "document_type_label_ru": "Договор купли-продажи для последующей передачи в финансовый лизинг",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "дкп",
+        "для последующей передачи в финансовый лизинг",
+        "договор купли продажи",
+        "договор купли продажи товара",
+        "оборудование",
+        "покупатель",
+        "покупатель покупает",
+        "продавец",
+        "продавец продает",
+        "товар",
+        "условия поставки"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "lease_contract",
+          "label_ru": "Договор финансового лизинга / заявление о присоединении",
+          "score": 13.1
+        },
+        {
+          "key": "invoice",
+          "label_ru": "Счёт / счёт на оплату / счёт-фактура",
+          "score": 7.0
+        },
+        {
+          "key": "guarantee_contract",
+          "label_ru": "Договор гарантии / поручительства",
+          "score": 1.5
+        }
+      ],
+      "fields": [
+        {
+          "name": "purchase_contract_number",
+          "label_ru": "Номер договора купли-продажи",
+          "value": "208/CL/30-05",
+          "page": 1,
+          "quote": "Ne 08/CL/30-05 Keitin каржылык лизингке беру упин тауарды сатып алу-сату ШАРТЫ / ДОГОВОР купли-продажи товара для последующей передачи в финансовый лизинг N208/CL/30-05 Алматы K., 2022 жылеы ‹30» мамыр г. Алматы «30» Mag 2022 г. Булан - кейн — «Сатушы» — деп — аталатын Товарищество е ограниченной «Hyundai Trans Auto» — жауапкершли! ответственност",
+          "confidence": 0.79,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "warranty_months",
+          "label_ru": "Гарантия, месяцев",
+          "value": 36,
+          "page": 7,
+          "quote": "тории Республики Казахстан. 4.2. Продавец несет ответственность за дефекты в поставленном Товаре при условии, что дефекты образовались по вине Продавца и/или завода- изготовителя, в течение 36 (тридцати шести) месяцев или 300 000 (триста тысяч) километров пробега с момента подписания Сторонами Акта приема-передачи, в зависимости OT Toro, Kakoe обстоятельство наступит раньше, при соблюдении Поку",
+          "confidence": 0.75,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "penalty_percent_daily",
+          "label_ru": "Пеня, % в день",
+          "value": 0.1,
+          "page": 8,
+          "quote": ". В случае нарушения Продавцом устранения недостатков Товара, выявленных приемке и/или в течение гарантийного ср Покупатель вправе требовать, a Продавец в т случае обязан оплатить пеню в размере 0,1% ( целых одной десятой процента) от cTOM Товара ненадлежащего качества, за каждый просрочки, HO He более 5% (пяти процев стоимости Товара ненадлежащего качества. 5.5, В случае прос",
+          "confidence": 0.74,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "buyer_iin_bin",
+          "label_ru": "ИИН/БИН — Покупатель",
+          "value": "980940000817",
+          "page": 13,
+          "quote": "ЕЦ: «Hyundai Trans Auto» ЖШС / TOO «Hyundai Trans Auto» Алматы к., Typxci6 ауданы, Буктырма кеш., 70-уй / 050000, г. Алматы, Турксибский pation, yx. Бухтарминская, дом 70 Тел: + 7 (727) 3210951 e-mail: hta-info@hyundai.kz БСН/БИН 980940000817 «Казакстан Халык Bankiy AK / A САТЫП АЛУШЫ / ПОКУПАТЕЛЬ: О «Народный Банк Казахстана» A get ч р «Bank ЦентрКредит» АК-тын enminec компаниясы «Центр Лизинг» жауапкерпили! шектеул! серктест!г! / Дочерняя — компания AO ответственнос",
+          "confidence": 0.89,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": "Определено по ближайшему контексту роли «Покупатель»."
+        },
+        {
+          "name": "money_candidates",
+          "label_ru": "Другие денежные суммы",
+          "value": [
+            "23349000.00",
+            "182122200.00",
+            "424951800.00",
+            "607074000.00"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.62,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Это дополнительные суммы, не выбранные как итоговые поля. Показаны 4 из 4."
+        },
+        {
+          "name": "iban_candidates",
+          "label_ru": "Неопределённые IBAN",
+          "value": [
+            "KZ328562203109707078"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.68,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Не удалось надёжно привязать банковский счёт к конкретной стороне."
+        },
+        {
+          "name": "iin_bin_candidates",
+          "label_ru": "Неопределённые ИИН/БИН",
+          "value": [
+            "020140001503",
+            "180140037205"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.68,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Роль не определена автоматически из-за недостаточного или неоднозначного контекста. Показаны 2 из 2."
+        }
+      ],
+      "warnings": [
+        {
+          "severity": "high",
+          "field": "Общая стоимость договора",
+          "message": "Ключевое поле не извлечено."
+        }
+      ]
+    }
+  ]
+}
