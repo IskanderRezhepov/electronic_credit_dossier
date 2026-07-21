@@ -1,0 +1,290 @@
+{
+  "result_id": "cc6c73cd181f4dcb973c599aa6b8dbd1",
+  "documents": [
+    {
+      "filename": "F187994017_ДКП 30-05 финиш.pdf",
+      "source_type": "pdf",
+      "page_count": 22,
+      "used_ocr": true,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "char_count": 11131,
+          "quality": 0.78
+        },
+        {
+          "page": 2,
+          "method": "ocr",
+          "char_count": 12936,
+          "quality": 0.73
+        },
+        {
+          "page": 3,
+          "method": "ocr",
+          "char_count": 12288,
+          "quality": 0.76
+        },
+        {
+          "page": 4,
+          "method": "ocr",
+          "char_count": 11971,
+          "quality": 0.73
+        },
+        {
+          "page": 5,
+          "method": "ocr",
+          "char_count": 13163,
+          "quality": 0.73
+        },
+        {
+          "page": 6,
+          "method": "ocr",
+          "char_count": 12676,
+          "quality": 0.7
+        },
+        {
+          "page": 7,
+          "method": "ocr",
+          "char_count": 12737,
+          "quality": 0.76
+        },
+        {
+          "page": 8,
+          "method": "ocr",
+          "char_count": 12633,
+          "quality": 0.73
+        },
+        {
+          "page": 9,
+          "method": "ocr",
+          "char_count": 12492,
+          "quality": 0.74
+        },
+        {
+          "page": 10,
+          "method": "ocr",
+          "char_count": 12014,
+          "quality": 0.71
+        },
+        {
+          "page": 11,
+          "method": "ocr",
+          "char_count": 12206,
+          "quality": 0.76
+        },
+        {
+          "page": 12,
+          "method": "ocr",
+          "char_count": 12851,
+          "quality": 0.73
+        },
+        {
+          "page": 13,
+          "method": "ocr",
+          "char_count": 6672,
+          "quality": 0.76
+        },
+        {
+          "page": 14,
+          "method": "ocr",
+          "char_count": 2400,
+          "quality": 0.77
+        },
+        {
+          "page": 15,
+          "method": "ocr",
+          "char_count": 3167,
+          "quality": 0.75
+        },
+        {
+          "page": 16,
+          "method": "ocr",
+          "char_count": 13060,
+          "quality": 0.74
+        },
+        {
+          "page": 17,
+          "method": "ocr",
+          "char_count": 15059,
+          "quality": 0.74
+        },
+        {
+          "page": 18,
+          "method": "ocr",
+          "char_count": 13366,
+          "quality": 0.72
+        },
+        {
+          "page": 19,
+          "method": "ocr",
+          "char_count": 13629,
+          "quality": 0.73
+        },
+        {
+          "page": 20,
+          "method": "ocr",
+          "char_count": 14409,
+          "quality": 0.74
+        },
+        {
+          "page": 21,
+          "method": "ocr",
+          "char_count": 2037,
+          "quality": 0.71
+        },
+        {
+          "page": 22,
+          "method": "ocr",
+          "char_count": 86,
+          "quality": 0.58
+        }
+      ],
+      "document_type": "purchase_contract",
+      "document_type_label_ru": "Договор купли-продажи для последующей передачи в финансовый лизинг",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "дкп",
+        "для последующей передачи в финансовый лизинг",
+        "договор купли продажи",
+        "договор купли продажи товара",
+        "покупатель",
+        "покупатель покупает",
+        "продавец",
+        "продавец продает",
+        "товар",
+        "условия поставки"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "lease_contract",
+          "label_ru": "Договор финансового лизинга / заявление о присоединении",
+          "score": 11.6
+        },
+        {
+          "key": "invoice",
+          "label_ru": "Счёт / счёт на оплату / счёт-фактура",
+          "score": 7.0
+        }
+      ],
+      "fields": [
+        {
+          "name": "purchase_contract_number",
+          "label_ru": "Номер договора купли-продажи",
+          "value": "08/СТ/30-05",
+          "page": 1,
+          "quote": "№ 08/CL/30-05 Keitin каржылык, лизингке беру упшин твуарды сатып алу-сату ШАРТЫ / ДОГОВОР купли-продажи товара для последующей передачи в финансовый лизинг №08/СТ./30-05 Алматы к., 2022 жылеы «G0» мамыр г. Алматы ‹30» мая 2022 г. кейн — «Сатушы» jem — аталатын Товарищество c ограниченной «Hyundai Trans Auto — жауапкерпили1 ответственностью «Hyunda",
+          "confidence": 0.78,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "purchase_contract_date",
+          "label_ru": "Дата договора купли-продажи",
+          "value": "30.05.2022",
+          "page": 1,
+          "quote": " товара для последующей передачи в финансовый лизинг №08/СТ./30-05 Алматы к., 2022 жылеы «G0» мамыр г. Алматы ‹30» мая 2022 г. кейн — «Сатушы» jem — аталатын Товарищество c ограниченной «Hyundai Trans Auto — жауапкерпили1 о",
+          "confidence": 0.78,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "delivery_term_days",
+          "label_ru": "Срок поставки, дней",
+          "value": 30,
+          "page": 4,
+          "quote": "5. Tayap Сатушыный жумые кундер! carat 08:00-ден 17:00-ге дейн тапсырылады. Сатыл алушы men — Лизинг алушы — Сатушынын Тауарлы беруге дайындыеы туралы получением денег. 3. Условия поставки и порядок приёмки Товара 3.1. Продавец осуществляет поставку Товара в течение 30 (тридцать) календарных дней с момента получения авансового платежа, в СООТВетствии с п.2.2.1 настоящего Договора. При этом передача Товара осуществляется Продавцом при условии поступления на банковский",
+          "confidence": 0.73,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "warranty_months",
+          "label_ru": "Гарантия, месяцев",
+          "value": 36,
+          "page": 7,
+          "quote": "тории Республики Казахстан. 4.2. Продавец несет ответственность за дефекты в поставленном Товаре при условии, что дефекты образовались mo вине Продавца н/или завода- изготовителя, в течение 36 (тридцати шести) месяцев или 300 000 (триста тысяч) километров пробега с момента подписания Сторонами Акта приема-передачи, в зависимости OT Toro, какое обетоятельство наступит раньше, при соблюдении Поку",
+          "confidence": 0.76,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "penalty_percent_daily",
+          "label_ru": "Пеня, % в день",
+          "value": 1.0,
+          "page": 8,
+          "quote": "случае нарушения Продавцом cp устранения недостатков Товара, выявленных приемке н/или в течение гарантийного cp Покупатель вправе требовать, а Продавец в та cline o6s38H оплатить пеню в размере 01% ( Товдра Н-енадлсжщц_еш качества, за каждый @ просрочки, HO He более 5% (ATH проценто стоимости Товара ненадлежащего качества. 5.5. В случае просрочки Покупателем платежей, указан",
+          "confidence": 0.73,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "iin_bin_candidates",
+          "label_ru": "Кандидаты ИИН/БИН",
+          "value": [
+            "020140001503",
+            "180140037205",
+            "980940000817"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.72,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Требуется определить роль каждого идентификатора."
+        },
+        {
+          "name": "iban_candidates",
+          "label_ru": "Кандидаты IBAN",
+          "value": [
+            "KZ328562203109707078",
+            "KZ808562203112109389"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.7,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": null
+        },
+        {
+          "name": "money_candidates",
+          "label_ru": "Кандидаты денежных сумм",
+          "value": [
+            "349000.00",
+            "23349000.00",
+            "182122200.00",
+            "424951800.00",
+            "607074000.00"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.64,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Не являются подтверждёнными итоговыми суммами."
+        }
+      ],
+      "warnings": [
+        {
+          "severity": "high",
+          "field": "Общая стоимость договора",
+          "message": "Ключевое поле не извлечено."
+        }
+      ]
+    }
+  ]
+}
