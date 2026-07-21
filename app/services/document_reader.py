@@ -4,6 +4,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
 
+import hashlib
+import json
+
 import fitz
 import pytesseract
 from docx import Document

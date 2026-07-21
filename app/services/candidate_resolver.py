@@ -69,45 +69,104 @@ def _score_role(context: str, role: str) -> float:
     return min(score, 1.0)
 
 
+
+def _explicit_role_score(context: str, role: str, value: str) -> float:
+    """
+    Score a 12-digit identifier by explicit role labels near the value.
+    The closest heading before the identifier receives the highest score.
+    """
+    upper = context.upper()
+    score = _score_role(context, role)
+
+    explicit_patterns = {
+        "seller": (
+            r"(?:ПРОДАВЕЦ|САТУШЫ).{0,260}?(?:БИН|ИИН|БСН|ЖСН)\s*[:№-]?\s*" + re.escape(value),
+        ),
+        "buyer": (
+            r"(?:ПОКУПАТЕЛЬ|САТЫП АЛУШЫ).{0,260}?(?:БИН|ИИН|БСН|ЖСН)\s*[:№-]?\s*" + re.escape(value),
+        ),
+        "lessee": (
+            r"(?:ЛИЗИНГОПОЛУЧАТЕЛЬ|ЛИЗИНГ АЛУШЫ).{0,260}?"
+            r"(?:БИН|ИИН|БСН|ЖСН)\s*[:№-]?\s*" + re.escape(value),
+        ),
+        "lessor": (
+            r"(?:ЛИЗИНГОДАТЕЛЬ|ЛИЗИНГ БЕРУШІ).{0,260}?"
+            r"(?:БИН|ИИН|БСН|ЖСН)\s*[:№-]?\s*" + re.escape(value),
+        ),
+    }
+
+    if re.search(explicit_patterns[role], upper, re.I | re.S):
+        score += 0.55
+
+    # Strong organisation cues.
+    if role == "lessor" and (
+        "BCC LEASING" in upper
+        or "БСС LEASING" in upper
+        or "БАНК ЦЕНТРКРЕДИТ" in upper
+    ):
+        score += 0.18
+
+    return min(score, 1.0)
+
+
 def _promote_identifiers(document: ReadDocument) -> tuple[list[dict], set[str]]:
     occurrences = _occurrences(document, r"\b\d{12}\b")
     by_value: dict[str, list[dict]] = defaultdict(list)
     for item in occurrences:
         by_value[item["value"]].append(item)
 
-    promoted: list[dict] = []
-    used: set[str] = set()
-
-    for role, config in ROLE_RULES.items():
-        ranked: list[tuple[float, str, dict]] = []
+    candidates: list[tuple[float, str, str, dict]] = []
+    for role in ROLE_RULES:
         for value, items in by_value.items():
-            best_item = max(items, key=lambda item: _score_role(item["quote"], role))
-            score = _score_role(best_item["quote"], role)
-            ranked.append((score, value, best_item))
-        ranked.sort(reverse=True)
+            best_item = max(
+                items,
+                key=lambda item: _explicit_role_score(item["quote"], role, value),
+            )
+            score = _explicit_role_score(best_item["quote"], role, value)
+            if score >= 0.62:
+                candidates.append((score, role, value, best_item))
 
-        if not ranked or ranked[0][0] < 0.62:
+    # Global one-to-one matching:
+    # one identifier cannot be silently assigned to two different roles.
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    assigned_roles: set[str] = set()
+    assigned_values: set[str] = set()
+    promoted: list[dict] = []
+
+    for score, role, value, item in candidates:
+        if role in assigned_roles or value in assigned_values:
             continue
 
-        top_score, top_value, top_item = ranked[0]
-        # Do not silently promote an ambiguous tie.
-        if len(ranked) > 1 and abs(top_score - ranked[1][0]) < 0.06:
+        # Require a clear margin over the next alternative for this role.
+        alternatives = sorted(
+            [
+                candidate_score
+                for candidate_score, candidate_role, candidate_value, _ in candidates
+                if candidate_role == role and candidate_value != value
+            ],
+            reverse=True,
+        )
+        if alternatives and score - alternatives[0] < 0.08:
             continue
 
-        promoted.append(field(
-            name=config["field"],
-            label_ru=f"ИИН/БИН — {config['label']}",
-            value=top_value,
-            page=top_item["page"],
-            quote=top_item["quote"],
-            confidence=max(0.72, min(0.96, top_score)),
-            extraction_method=top_item["method"],
-            status="extracted" if top_score >= 0.78 else "candidate",
-            notes=f"Определено по ближайшему контексту роли «{config['label']}».",
-        ))
-        used.add(top_value)
+        config = ROLE_RULES[role]
+        promoted.append(
+            field(
+                name=config["field"],
+                label_ru=f"ИИН/БИН — {config['label']}",
+                value=value,
+                page=item["page"],
+                quote=item["quote"],
+                confidence=max(0.72, min(0.96, score)),
+                extraction_method=item["method"],
+                status="extracted" if score >= 0.80 else "candidate",
+                notes=f"Определено по ближайшему контексту роли «{config['label']}».",
+            )
+        )
+        assigned_roles.add(role)
+        assigned_values.add(value)
 
-    return promoted, used
+    return promoted, assigned_values
 
 
 def _promote_ibans(document: ReadDocument) -> tuple[list[dict], set[str]]:
