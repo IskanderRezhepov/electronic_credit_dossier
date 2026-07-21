@@ -1,0 +1,44 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Flask runtime data
+instance/*
+!instance/.gitkeep
+
+# Application-generated files
+uploads/
+outputs/
+exports/
+cache/
+ocr_cache/
+temp/
+tmp/
+
+# Local databases and configuration
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
