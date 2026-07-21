@@ -1,0 +1,93 @@
+{
+  "result_id": "40489f12b0bb40d7b99bd04105a382bd",
+  "documents": [
+    {
+      "filename": "F-1343111332_Акт приема передачи №1 к Договору купли-продажи для последующей передачи в фин. лизинг №25-CL-28-10 от 28 октября 2022г.pdf",
+      "source_type": "pdf",
+      "page_count": 2,
+      "used_ocr": true,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "char_count": 3305,
+          "quality": 0.77
+        },
+        {
+          "page": 2,
+          "method": "ocr",
+          "char_count": 476,
+          "quality": 0.75
+        }
+      ],
+      "document_type": "acceptance_act",
+      "document_type_label_ru": "Акт приёма-передачи",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "акт приема",
+        "акт приема передачи",
+        "акт приёма",
+        "акт приёма передачи",
+        "приема передачи",
+        "продавец передает"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "purchase_contract",
+          "label_ru": "Договор купли-продажи для последующей передачи в финансовый лизинг",
+          "score": 10.4
+        },
+        {
+          "key": "lease_contract",
+          "label_ru": "Договор финансового лизинга / заявление о присоединении",
+          "score": 8.0
+        },
+        {
+          "key": "invoice",
+          "label_ru": "Счёт / счёт на оплату / счёт-фактура",
+          "score": 3.0
+        }
+      ],
+      "fields": [
+        {
+          "name": "money_candidates",
+          "label_ru": "Другие денежные суммы",
+          "value": [
+            "25823520.00"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.62,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Суммы не выбраны как итоговое поле. Показаны 1 из 1."
+        },
+        {
+          "name": "linked_purchase_contract",
+          "label_ru": "Связанный договор купли-продажи",
+          "value": "O25-CL-28-10_28_2022",
+          "page": null,
+          "quote": "Имя файла: F-1343111332__No1_-_._No25-CL-28-10_28_2022.pdf",
+          "confidence": 0.82,
+          "extraction_method": "filename",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Полный номер извлечён из имени файла; требуется сверка."
+        }
+      ],
+      "warnings": [
+        {
+          "severity": "medium",
+          "field": "Связанный договор купли-продажи",
+          "message": "Значение взято из имени файла и требует подтверждения по тексту."
+        },
+        {
+          "severity": "high",
+          "field": "Номер акта",
+          "message": "Ключевое поле не извлечено."
+        }
+      ]
+    }
+  ]
+}
