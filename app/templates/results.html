@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Результаты анализа</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="container wide">
+    <div class="toolbar">
+        <a class="button secondary" href="{{ url_for('main.index') }}">Новый анализ</a>
+        <a class="button" href="{{ url_for('main.download', result_id=result.result_id, kind='excel') }}">Скачать Excel</a>
+        <a class="button" href="{{ url_for('main.download', result_id=result.result_id, kind='json') }}">Скачать JSON</a>
+    </div>
+
+    <section class="card">
+        <h1>Результаты анализа</h1>
+        <div class="metrics">
+            <div><strong>{{ result.documents|length }}</strong><span>документов</span></div>
+            <div><strong>{{ result.documents|selectattr('used_ocr')|list|length }}</strong><span>с OCR</span></div>
+            <div><strong>{{ result.documents|map(attribute='warnings')|map('length')|sum }}</strong><span>предупреждений</span></div>
+        </div>
+    </section>
+
+    {% for document in result.documents %}
+        <section class="card">
+            <div class="document-heading">
+                <div>
+                    <h2>{{ document.document_type_label_ru }}</h2>
+                    <p class="muted">{{ document.filename }} · {{ document.page_count }} стр. · {{ 'OCR использован' if document.used_ocr else 'цифровой текст' }}</p>
+                </div>
+                <span class="confidence">Классификация: {{ document.classification_confidence }}</span>
+            </div>
+
+            {% if document.warnings %}
+                <div class="review-box">
+                    <h3>Требует проверки</h3>
+                    {% for warning in document.warnings %}
+                        <div class="alert {{ 'error' if warning.severity == 'high' else 'warning' }}">
+                            <strong>{{ warning.field }}</strong>: {{ warning.message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if document.document_type == 'unknown' %}
+                <div class="alert warning">Тип не определён уверенно. Показаны только универсальные кандидаты; они не считаются подтверждёнными полями.</div>
+            {% endif %}
+
+            <details class="page-methods">
+                <summary>Как прочитаны страницы</summary>
+                <div class="method-grid">
+                    {% for page in document.page_methods %}
+                        <span>Стр. {{ page.page }}: {{ page.method }}, качество {{ page.quality }}, {{ page.char_count }} символов</span>
+                    {% endfor %}
+                </div>
+            </details>
+
+            {% if document.fields %}
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Поле</th><th>Значение</th><th>Стр.</th><th>Метод</th><th>Уверенность</th><th>Статус</th><th>Источник</th></tr></thead>
+                        <tbody>
+                        {% for field in document.fields %}
+                            <tr class="{{ 'candidate-row' if field.status == 'candidate' else '' }}">
+                                <td>{{ field.label_ru }}</td>
+                                <td>{% if field.value is mapping or field.value is sequence and field.value is not string %}
+                                    <details class="value-list"><summary>{{ field.value|length }} знач.</summary><pre>{{ field.value | tojson(indent=2) }}</pre></details>
+                                {% else %}{{ field.value }}{% endif %}</td>
+                                <td>{{ field.page or '—' }}</td>
+                                <td><span class="badge">{{ field.extraction_method }}</span></td>
+                                <td>{{ field.confidence }}</td>
+                                <td>{{ 'Кандидат' if field.status == 'candidate' else 'Извлечено' }}</td>
+                                <td>{% if field.quote %}<details><summary>Цитата</summary><p>{{ field.quote }}</p></details>{% else %}{{ field.notes or '—' }}{% endif %}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="alert error">Не удалось извлечь подтверждённые поля. Проверьте OCR и добавьте шаблон этого документа.</div>
+            {% endif %}
+        </section>
+    {% endfor %}
+</main>
+</body>
+</html>
