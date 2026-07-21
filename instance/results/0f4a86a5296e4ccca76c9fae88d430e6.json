@@ -1,0 +1,399 @@
+{
+  "result_id": "0f4a86a5296e4ccca76c9fae88d430e6",
+  "documents": [
+    {
+      "filename": "F1642809888_Договор субсидирования Арлан сауда.pdf",
+      "source_type": "pdf",
+      "page_count": 35,
+      "used_ocr": true,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "digital",
+          "char_count": 3230,
+          "quality": 0.99
+        },
+        {
+          "page": 2,
+          "method": "digital",
+          "char_count": 3208,
+          "quality": 0.99
+        },
+        {
+          "page": 3,
+          "method": "digital",
+          "char_count": 2435,
+          "quality": 0.99
+        },
+        {
+          "page": 4,
+          "method": "digital",
+          "char_count": 3530,
+          "quality": 0.99
+        },
+        {
+          "page": 5,
+          "method": "digital",
+          "char_count": 3602,
+          "quality": 0.99
+        },
+        {
+          "page": 6,
+          "method": "digital",
+          "char_count": 3770,
+          "quality": 0.99
+        },
+        {
+          "page": 7,
+          "method": "digital",
+          "char_count": 3680,
+          "quality": 0.99
+        },
+        {
+          "page": 8,
+          "method": "digital",
+          "char_count": 3736,
+          "quality": 0.99
+        },
+        {
+          "page": 9,
+          "method": "digital",
+          "char_count": 3443,
+          "quality": 0.99
+        },
+        {
+          "page": 10,
+          "method": "digital",
+          "char_count": 3679,
+          "quality": 0.99
+        },
+        {
+          "page": 11,
+          "method": "digital",
+          "char_count": 3810,
+          "quality": 0.99
+        },
+        {
+          "page": 12,
+          "method": "digital",
+          "char_count": 3162,
+          "quality": 0.99
+        },
+        {
+          "page": 13,
+          "method": "digital",
+          "char_count": 2942,
+          "quality": 0.99
+        },
+        {
+          "page": 14,
+          "method": "digital",
+          "char_count": 2710,
+          "quality": 0.99
+        },
+        {
+          "page": 15,
+          "method": "digital",
+          "char_count": 886,
+          "quality": 0.99
+        },
+        {
+          "page": 16,
+          "method": "hybrid",
+          "char_count": 5305,
+          "quality": 0.87
+        },
+        {
+          "page": 17,
+          "method": "digital",
+          "char_count": 1745,
+          "quality": 0.99
+        },
+        {
+          "page": 18,
+          "method": "digital",
+          "char_count": 2992,
+          "quality": 0.99
+        },
+        {
+          "page": 19,
+          "method": "digital",
+          "char_count": 3084,
+          "quality": 0.99
+        },
+        {
+          "page": 20,
+          "method": "digital",
+          "char_count": 2660,
+          "quality": 0.99
+        },
+        {
+          "page": 21,
+          "method": "digital",
+          "char_count": 3252,
+          "quality": 0.99
+        },
+        {
+          "page": 22,
+          "method": "digital",
+          "char_count": 3801,
+          "quality": 0.99
+        },
+        {
+          "page": 23,
+          "method": "digital",
+          "char_count": 3610,
+          "quality": 0.99
+        },
+        {
+          "page": 24,
+          "method": "digital",
+          "char_count": 3644,
+          "quality": 0.99
+        },
+        {
+          "page": 25,
+          "method": "digital",
+          "char_count": 3844,
+          "quality": 0.99
+        },
+        {
+          "page": 26,
+          "method": "digital",
+          "char_count": 3528,
+          "quality": 0.99
+        },
+        {
+          "page": 27,
+          "method": "digital",
+          "char_count": 3742,
+          "quality": 0.99
+        },
+        {
+          "page": 28,
+          "method": "digital",
+          "char_count": 3851,
+          "quality": 0.99
+        },
+        {
+          "page": 29,
+          "method": "digital",
+          "char_count": 2946,
+          "quality": 0.99
+        },
+        {
+          "page": 30,
+          "method": "digital",
+          "char_count": 2796,
+          "quality": 0.99
+        },
+        {
+          "page": 31,
+          "method": "digital",
+          "char_count": 2773,
+          "quality": 0.99
+        },
+        {
+          "page": 32,
+          "method": "hybrid",
+          "char_count": 3209,
+          "quality": 0.72
+        },
+        {
+          "page": 33,
+          "method": "digital",
+          "char_count": 1841,
+          "quality": 0.99
+        },
+        {
+          "page": 34,
+          "method": "digital",
+          "char_count": 1255,
+          "quality": 0.99
+        },
+        {
+          "page": 35,
+          "method": "digital",
+          "char_count": 709,
+          "quality": 0.99
+        }
+      ],
+      "document_type": "subsidy_agreement",
+      "document_type_label_ru": "Договор субсидирования ставки вознаграждения",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "договор субсидирования",
+        "договор субсидирования части ставки вознаграждения",
+        "лизинговая компания",
+        "получатель",
+        "субсид",
+        "субсидированию подлежит",
+        "субсидируемой части ставки",
+        "финансовое агентство",
+        "фонд развития предпринимательства даму"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "lease_contract",
+          "label_ru": "Договор финансового лизинга / заявление о присоединении",
+          "score": 8.6
+        },
+        {
+          "key": "invoice",
+          "label_ru": "Счёт / счёт на оплату / счёт-фактура",
+          "score": 4.2
+        },
+        {
+          "key": "guarantee_contract",
+          "label_ru": "Договор гарантии / поручительства",
+          "score": 2.1
+        }
+      ],
+      "fields": [
+        {
+          "name": "subsidy_contract_number",
+          "label_ru": "Номер договора субсидирования",
+          "value": "OPU/2023/U/S/018097/0001L",
+          "page": 1,
+          "quote": "DOC ID KZPKXV42023000004889A046AD Электронный документ подписан в Documentolog Business Договор субсидирования части ставки вознаграждения в рамках национального проекта по развитию предпринимательства на 2021 - 2025 годы № OPU/2023/U/S/018097/0001L город Усть-Каменогорск Акционерное общество «Фонд развития предпринимательства «Даму» в лице директора Регионального филиала АО «Фонд развития предпринимательства «Даму» п",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "recipient_name",
+          "label_ru": "Получатель",
+          "value": "Арлан Сауда",
+          "page": 1,
+          "quote": "ter Leasing», в лице Ахмет Шахриза Маликқызы, действующего на основании Доверенности №3/116-CL от 15.09.2023 г., именуемое в дальнейшем «лизинговая компания», с другой стороны, и Товарищество с ограниченной ответственностью «Арлан Сауда» в лице Директора г-на Махабаева Марлена Булегеновича, действующего на основании Устава, именуемый в дальнейшем «Получатель», совместно именуемые «Стороны», а по отдельности «Сторона» либо как указано выше, заключили настоящий договор субсидирования части ставки вознаграждения в рамках национального пр",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "linked_lease_contract_number",
+          "label_ru": "Связанный договор финансового лизинга",
+          "value": "OPU/2023/U/S/018097",
+          "page": 2,
+          "quote": "в Дочерней компании АО «Банк ЦентрКредит» Товарищество с ограниченной ответственностью «Center Leasing» на следующих условиях: Договор банковского займа/договор по микрокредиту/договор финансового лизинга № OPU/2023/U/S/018097 от «07» апреля 2023 года Целевое назначение Инвестиции: DOC ID KZPKXV42023000004889A046AD",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "financing_purpose",
+          "label_ru": "Целевое назначение",
+          "value": "Инвестиции:",
+          "page": 2,
+          "quote": "венностью «Center Leasing» на следующих условиях: Договор банковского займа/договор по микрокредиту/договор финансового лизинга № OPU/2023/U/S/018097 от «07» апреля 2023 года Целевое назначение Инвестиции: DOC ID KZPKXV42023000004889A046AD",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "nominal_rate_percent",
+          "label_ru": "Ставка вознаграждения, %",
+          "value": 21.75,
+          "page": 3,
+          "quote": "начала срока субсидирования 39 351 350,00 (тридцать девять миллионов триста пятьдесят одна тысяча триста пятьдесят) Валюта кредита/микрокредита/лизинга финансирования тенге Ставка вознаграждения 21,75 (Двадцать одна целая семьдесят пять сотых) процентов годовых Срок кредита/микрокредита/ лизинга с 26.06.2023 г. по 05.08.2026 г. Особые условия Запрещается использование авт",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "recipient_rate_percent",
+          "label_ru": "Ставка, оплачиваемая получателем, %",
+          "value": 9.0,
+          "page": 3,
+          "quote": "семьдесят пять сотых) процентов годовых, при этом часть ставки вознаграждения в размере 12,75 (двенадцать целых семьдесят пять сотых) процентов оплачивает финансовое агентство, а остальную часть ставки вознаграждения в размере 9 (девять) процентов оплачивает Получатель, в соответствии с графиком погашений к Договору субсидирования по форме согласно приложению к настоящему Договору (далее - Приложение). 7.",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "subsidized_rate_percent",
+          "label_ru": "Субсидируемая ставка, %",
+          "value": 12.75,
+          "page": 3,
+          "quote": "бсидированию подлежит часть ставки вознаграждения по кредиту/микрокредита /лизингу в размере 21,75 (двадцать одна целая семьдесят пять сотых) процентов годовых, при этом часть ставки вознаграждения в размере 12,75 (двенадцать целых семьдесят пять сотых) процентов оплачивает финансовое агентство, а остальную часть ставки вознаграждения в размере 9 (девять) процентов оплачивает Получатель, в",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "financing_amount_kzt",
+          "label_ru": "Сумма финансирования, тенге",
+          "value": "39351350.00",
+          "page": 3,
+          "quote": "тотранспорта (изометрический фургон JAC N56) В случае кредита для целей реализации «зеленых» проектов: категория/и «зеленой» таксономии, к которой/ым относится «зеленый» проект Сумма кредита/микрокредита/лизинга на дату начала срока субсидирования 39 351 350,00 (тридцать девять миллионов триста пятьдесят одна тысяча триста пятьдесят) Валюта кредита/микрокредита/лизинга финансирования тенге Ставка вознаграждения 21,75 (Двадцать одна",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "doc_ids",
+          "label_ru": "DOC ID",
+          "value": [
+            "KZPKXV42023000004889A046AD"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.8,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "iban_candidates",
+          "label_ru": "Неопределённые IBAN",
+          "value": [
+            "KZ418562203117893716",
+            "KZ42070F000001F00001",
+            "KZ558562203129447619"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.68,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Не удалось надёжно привязать банковский счёт к конкретной стороне."
+        },
+        {
+          "name": "iin_bin_candidates",
+          "label_ru": "Неопределённые ИИН/БИН",
+          "value": [
+            "020140001503",
+            "140740010189",
+            "970840000277"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.68,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Роль не определена автоматически из-за недостаточного или неоднозначного контекста. Показаны 3 из 3."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

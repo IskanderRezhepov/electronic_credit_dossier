@@ -1,0 +1,169 @@
+{
+  "result_id": "bb325a4bc148416bbe80a36e95e482b7",
+  "documents": [
+    {
+      "filename": "F-698246547_Доп согл Казпромсервис.pdf",
+      "source_type": "pdf",
+      "page_count": 8,
+      "used_ocr": false,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "digital",
+          "char_count": 3438,
+          "quality": 0.99
+        },
+        {
+          "page": 2,
+          "method": "digital",
+          "char_count": 2402,
+          "quality": 0.99
+        },
+        {
+          "page": 3,
+          "method": "digital",
+          "char_count": 1240,
+          "quality": 0.99
+        },
+        {
+          "page": 4,
+          "method": "digital",
+          "char_count": 3592,
+          "quality": 0.99
+        },
+        {
+          "page": 5,
+          "method": "digital",
+          "char_count": 2383,
+          "quality": 0.99
+        },
+        {
+          "page": 6,
+          "method": "digital",
+          "char_count": 858,
+          "quality": 0.99
+        },
+        {
+          "page": 7,
+          "method": "digital",
+          "char_count": 1238,
+          "quality": 0.99
+        },
+        {
+          "page": 8,
+          "method": "digital",
+          "char_count": 682,
+          "quality": 0.99
+        }
+      ],
+      "document_type": "addendum",
+      "document_type_label_ru": "Дополнительное соглашение",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "дополнительное соглашение",
+        "қосымша келісім"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "signature_receipt",
+          "label_ru": "Квитанция о подписании",
+          "score": 7.1
+        },
+        {
+          "key": "subsidy_agreement",
+          "label_ru": "Договор субсидирования ставки вознаграждения",
+          "score": 6.8
+        },
+        {
+          "key": "invoice",
+          "label_ru": "Счёт / счёт на оплату / счёт-фактура",
+          "score": 4.2
+        }
+      ],
+      "fields": [
+        {
+          "name": "addendum_date",
+          "label_ru": "Дата дополнительного соглашения",
+          "value": "28.12.2023",
+          "page": 1,
+          "quote": "olog Business Дополнительное соглашение №1 к Договору субсидирования в рамках национального проекта по развитию предпринимательства на 2021 - 2025 годы №AQ5/2023/U/S/221974/0001L от 28.12.2023г. Область Ұлытау Акционерное общество «Фонд развития предпринимательства «Даму» в лице Директора Регионального филиала АО «Фонд развития предпринимательства «Даму» по области Ұл",
+          "confidence": 0.82,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "addendum_number",
+          "label_ru": "Номер дополнительного соглашения",
+          "value": "1",
+          "page": 1,
+          "quote": "DOC ID KZPKXV420240000052586CC55D Электронный документ подписан в Documentolog Business Дополнительное соглашение №1 к Договору субсидирования в рамках национального проекта по развитию предпринимательства на 2021 - 2025 годы №AQ5/2023/U/S/221974/0001L от 28.12.2023г. Область Ұлытау Акционерн",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "lease_contract_number",
+          "label_ru": "Номер основного договора",
+          "value": "AQ5/2023/U/S/221974",
+          "page": 1,
+          "quote": "окумент подписан в Documentolog Business Дополнительное соглашение №1 к Договору субсидирования в рамках национального проекта по развитию предпринимательства на 2021 - 2025 годы №AQ5/2023/U/S/221974/0001L от 28.12.2023г. Область Ұлытау Акционерное общество «Фонд развития предпринимательства «Даму» в лице Директора Регионального филиала АО «Фонд развития предпринимательства",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "doc_ids",
+          "label_ru": "DOC ID",
+          "value": [
+            "KZPKXV420240000052586CC55D"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.98,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "iban_candidates",
+          "label_ru": "Неопределённые IBAN",
+          "value": [
+            "KZ418562203117893716",
+            "KZ42070F000001F00001"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.84,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Не удалось надёжно привязать банковский счёт к конкретной стороне."
+        },
+        {
+          "name": "iin_bin_candidates",
+          "label_ru": "Неопределённые ИИН/БИН",
+          "value": [
+            "020140001503",
+            "130940024372",
+            "970840000277"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.84,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Роль не определена автоматически из-за недостаточного или неоднозначного контекста. Показаны 3 из 3."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}
