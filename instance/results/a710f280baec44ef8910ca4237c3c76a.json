@@ -1,0 +1,294 @@
+{
+  "result_id": "a710f280baec44ef8910ca4237c3c76a",
+  "documents": [
+    {
+      "filename": "F-2074156686_0. ДБЗ.pdf",
+      "source_type": "pdf",
+      "page_count": 30,
+      "used_ocr": false,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "digital",
+          "char_count": 3609,
+          "quality": 0.99
+        },
+        {
+          "page": 2,
+          "method": "digital",
+          "char_count": 2928,
+          "quality": 0.99
+        },
+        {
+          "page": 3,
+          "method": "digital",
+          "char_count": 1936,
+          "quality": 0.99
+        },
+        {
+          "page": 4,
+          "method": "digital",
+          "char_count": 3049,
+          "quality": 0.99
+        },
+        {
+          "page": 5,
+          "method": "digital",
+          "char_count": 3829,
+          "quality": 0.99
+        },
+        {
+          "page": 6,
+          "method": "digital",
+          "char_count": 3742,
+          "quality": 0.99
+        },
+        {
+          "page": 7,
+          "method": "digital",
+          "char_count": 3837,
+          "quality": 0.99
+        },
+        {
+          "page": 8,
+          "method": "digital",
+          "char_count": 3648,
+          "quality": 0.99
+        },
+        {
+          "page": 9,
+          "method": "digital",
+          "char_count": 3750,
+          "quality": 0.99
+        },
+        {
+          "page": 10,
+          "method": "digital",
+          "char_count": 3750,
+          "quality": 0.99
+        },
+        {
+          "page": 11,
+          "method": "digital",
+          "char_count": 3769,
+          "quality": 0.99
+        },
+        {
+          "page": 12,
+          "method": "digital",
+          "char_count": 3604,
+          "quality": 0.99
+        },
+        {
+          "page": 13,
+          "method": "digital",
+          "char_count": 3632,
+          "quality": 0.99
+        },
+        {
+          "page": 14,
+          "method": "digital",
+          "char_count": 3403,
+          "quality": 0.99
+        },
+        {
+          "page": 15,
+          "method": "digital",
+          "char_count": 2919,
+          "quality": 0.99
+        },
+        {
+          "page": 16,
+          "method": "digital",
+          "char_count": 2134,
+          "quality": 0.99
+        },
+        {
+          "page": 17,
+          "method": "digital",
+          "char_count": 738,
+          "quality": 0.99
+        },
+        {
+          "page": 18,
+          "method": "digital",
+          "char_count": 1404,
+          "quality": 0.99
+        },
+        {
+          "page": 19,
+          "method": "digital",
+          "char_count": 3132,
+          "quality": 0.99
+        },
+        {
+          "page": 20,
+          "method": "digital",
+          "char_count": 3213,
+          "quality": 0.99
+        },
+        {
+          "page": 21,
+          "method": "digital",
+          "char_count": 1051,
+          "quality": 0.99
+        },
+        {
+          "page": 22,
+          "method": "digital",
+          "char_count": 2598,
+          "quality": 0.99
+        },
+        {
+          "page": 23,
+          "method": "digital",
+          "char_count": 1185,
+          "quality": 0.99
+        },
+        {
+          "page": 24,
+          "method": "digital",
+          "char_count": 1801,
+          "quality": 0.99
+        },
+        {
+          "page": 25,
+          "method": "digital",
+          "char_count": 2186,
+          "quality": 0.99
+        },
+        {
+          "page": 26,
+          "method": "digital",
+          "char_count": 1070,
+          "quality": 0.99
+        },
+        {
+          "page": 27,
+          "method": "digital",
+          "char_count": 2663,
+          "quality": 0.99
+        },
+        {
+          "page": 28,
+          "method": "digital",
+          "char_count": 3321,
+          "quality": 0.99
+        },
+        {
+          "page": 29,
+          "method": "digital",
+          "char_count": 2477,
+          "quality": 0.99
+        },
+        {
+          "page": 30,
+          "method": "digital",
+          "char_count": 3114,
+          "quality": 0.99
+        }
+      ],
+      "document_type": "bank_guarantee_application",
+      "document_type_label_ru": "Заявление о присоединении / банковская гарантия",
+      "classification_confidence": 0.99,
+      "matched_keywords": [
+        "бенефициар",
+        "заявление о присоединении",
+        "принципал",
+        "сумма гарантии"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "lease_contract",
+          "label_ru": "Договор финансового лизинга / заявление о присоединении",
+          "score": 8.0
+        },
+        {
+          "key": "guarantee_contract",
+          "label_ru": "Договор гарантии / поручительства",
+          "score": 6.0
+        },
+        {
+          "key": "addendum",
+          "label_ru": "Дополнительное соглашение",
+          "score": 2.0
+        }
+      ],
+      "fields": [
+        {
+          "name": "guarantor_iban",
+          "label_ru": "IBAN — Гарант",
+          "value": "KZ928562203146281012",
+          "page": 1,
+          "quote": "лион төрт жүз жетпіс мың) теңге 3. Срок Займа: 84 (Восемьдесят четыре) месяца, с 09.06.2025г. по 08.06.2032 г. Заем считается предоставленным с момента зачисления денег на банковский счёт Заемщика, открытый в Банке: №KZ928562203146281012 (далее – «Счёт»). Срок гарантии Фонда: с даты подписания гарантийного обязательства по 08.11.2032г. Сумма гарантии Фонда составляет 50 470 000,00 (Пятьдесят миллионов четыреста",
+          "confidence": 0.9,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": "Определено по реквизитам стороны «Гарант»."
+        },
+        {
+          "name": "guarantee_application_number",
+          "label_ru": "Номер заявления на гарантию",
+          "value": "OPA/2025/U/L/027729",
+          "page": 1,
+          "quote": "1 Мемлекеттік және мемлекеттік емес, банктік емес бағдарламалар/өнімдер бойынша Қосылу шартына ҚОСЫЛУ ТУРАЛЫ ӨТІНІШ № OPA/2025/U/L/027729 ЗАЯВЛЕНИЕ О ПРИСОЕДИНЕНИИ № OPA/2025/U/L/027729 к Договору присоединения по государственным и негосударственным, небанковским Программам/Продуктам Астана қ. 09.06.2025ж.",
+          "confidence": 0.96,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": null
+        },
+        {
+          "name": "money_candidates",
+          "label_ru": "Другие денежные суммы",
+          "value": [
+            "30000.00",
+            "757050.00",
+            "50470000.00",
+            "103000000.00",
+            "163403792.00"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.78,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Суммы не выбраны как итоговое поле. Показаны 5 из 5."
+        },
+        {
+          "name": "iban_candidates",
+          "label_ru": "Неопределённые IBAN",
+          "value": [
+            "KZ65125KZT1001300224"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.84,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Не удалось надёжно привязать банковский счёт к конкретной стороне."
+        },
+        {
+          "name": "iin_bin_candidates",
+          "label_ru": "Неопределённые ИИН/БИН",
+          "value": [
+            "201240028328",
+            "970840000277",
+            "980640000093"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.84,
+          "extraction_method": "digital",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Роль не определена автоматически из-за недостаточного или неоднозначного контекста. Показаны 3 из 3."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "result_id": "2c7129b6ab26443c97471f8c508f5f80",
+  "documents": [
+    {
+      "filename": "G-3191930_ДБЗ.pdf",
+      "source_type": "pdf",
+      "page_count": 14,
+      "used_ocr": true,
+      "page_methods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "char_count": 5795,
+          "quality": 0.79
+        },
+        {
+          "page": 2,
+          "method": "ocr",
+          "char_count": 5778,
+          "quality": 0.78
+        },
+        {
+          "page": 3,
+          "method": "ocr",
+          "char_count": 5560,
+          "quality": 0.78
+        },
+        {
+          "page": 4,
+          "method": "ocr",
+          "char_count": 3760,
+          "quality": 0.78
+        },
+        {
+          "page": 5,
+          "method": "ocr",
+          "char_count": 2462,
+          "quality": 0.75
+        },
+        {
+          "page": 6,
+          "method": "ocr",
+          "char_count": 6061,
+          "quality": 0.76
+        },
+        {
+          "page": 7,
+          "method": "ocr",
+          "char_count": 1025,
+          "quality": 0.74
+        },
+        {
+          "page": 8,
+          "method": "ocr",
+          "char_count": 3422,
+          "quality": 0.75
+        },
+        {
+          "page": 9,
+          "method": "ocr",
+          "char_count": 3393,
+          "quality": 0.78
+        },
+        {
+          "page": 10,
+          "method": "ocr",
+          "char_count": 4057,
+          "quality": 0.81
+        },
+        {
+          "page": 11,
+          "method": "ocr",
+          "char_count": 3299,
+          "quality": 0.84
+        },
+        {
+          "page": 12,
+          "method": "ocr",
+          "char_count": 1816,
+          "quality": 0.84
+        },
+        {
+          "page": 13,
+          "method": "ocr",
+          "char_count": 1536,
+          "quality": 0.75
+        },
+        {
+          "page": 14,
+          "method": "ocr",
+          "char_count": 2322,
+          "quality": 0.79
+        }
+      ],
+      "document_type": "unknown",
+      "document_type_label_ru": "Неизвестный тип документа",
+      "classification_confidence": 0.0,
+      "matched_keywords": [
+        "гарант",
+        "поручитель"
+      ],
+      "classification_alternatives": [
+        {
+          "key": "payment_schedule",
+          "label_ru": "График погашения / график платежей",
+          "score": 2.6
+        },
+        {
+          "key": "cash_pledge_agreement",
+          "label_ru": "Договор залога денег на счёте",
+          "score": 2.1
+        },
+        {
+          "key": "bank_guarantee_application",
+          "label_ru": "Заявление о присоединении / банковская гарантия",
+          "score": 1.5
+        }
+      ],
+      "fields": [
+        {
+          "name": "borrower_iin_bin",
+          "label_ru": "ИИН/БИН — Заёмщик",
+          "value": "790105403331",
+          "page": 11,
+          "quote": "4 г. Карыз алушынын Teri, аты, oxecinin аты (болган кезде) / Арстамбаева Салтанат Салыковна карыз алушынын атауы / Фамилия, uma, отчество (при наличии) /наименование заемщика Карыз алушынын жеке сойкестенд1ру нем!1р! OKCHY бизнес 790105403331 сэйкестенд!ру нем1р! (BCHY Индивидуальный идентификационный номер (AMH)/ бизнес- идентификационный номер (БИН) заемщика Карыз сомасы жене валютасы / Сумма и валюта. займа 2 000 000.00 тенге/тенге Сыйакы мелшерлеместин memmepi / Р",
+          "confidence": 0.91,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": "Определено по ближайшему контексту роли «Заёмщик»."
+        },
+        {
+          "name": "beneficiary_iin_bin",
+          "label_ru": "ИИН/БИН — Бенефициар",
+          "value": "980640000093",
+          "page": 14,
+          "quote": "латежных системах» просим осуществлять платежи и (или) переводы денег по следующим реквизитам: Бенефициер 1: Наименование бенефициара: Акционерное общество «Банк ЦентрКредит» ИИК бенефициара: К7908561867101741536 BUH бенефициара: 980640000093 Hanmenonanne банка бенефициара: AO «bank ЦентрКредит» БИК банка бенефициара: NBRKKZKX BUH Ganka бенефициара: 980640000093 Сумма: по Графику погашения (Приложение к Заявлению № NU7/2024/F/L/053019 от 15.07.2024 Toa), в MOJIHOM объ",
+          "confidence": 0.96,
+          "extraction_method": "ocr",
+          "value_type": "direct",
+          "status": "extracted",
+          "notes": "Определено по ближайшему контексту роли «Бенефициар»."
+        },
+        {
+          "name": "money_candidates",
+          "label_ru": "Другие денежные суммы",
+          "value": [
+            "1882.42",
+            "2620.70",
+            "3818.42",
+            "4146.62",
+            "5459.30",
+            "6312.47",
+            "6923.95",
+            "8791.68"
+          ],
+          "page": null,
+          "quote": null,
+          "confidence": 0.62,
+          "extraction_method": "mixed",
+          "value_type": "direct",
+          "status": "candidate",
+          "notes": "Суммы не выбраны как итоговое поле. Показаны 8 из 163."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}
