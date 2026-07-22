@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Карточка клиента</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="container wide">
+    <div class="toolbar">
+        <a class="button secondary" href="{{ url_for('main.history') }}">Все клиенты</a>
+        <a class="button secondary" href="{{ url_for('main.index') }}">Новый анализ</a>
+    </div>
+
+    <section class="card">
+        <h1>{{ client.get('name') or 'Клиент без извлечённого наименования' }}</h1>
+        <p>{{ client.get('role_label_ru') or 'Основная сторона' }} · <strong>{{ client.get('iin_bin') or 'ИИН/БИН не определён' }}</strong></p>
+        <div class="metrics">
+            <div><strong>{{ client.get('results', [])|length }}</strong><span>анализов</span></div>
+            <div><strong>{{ dossier.get('equipment', {}).get('total_quantity') or '—' }}</strong><span>единиц техники</span></div>
+            <div><strong>{{ dossier.get('equipment', {}).get('unique_vin_count', 0) }}</strong><span>уникальных VIN</span></div>
+            <div><strong>{{ dossier.get('counts', {}).get('mismatch', 0) }}</strong><span>расхождений</span></div>
+        </div>
+    </section>
+
+    {% if dossier.get('equipment', {}).get('types') %}
+    <section class="card">
+        <h2>Техника клиента</h2>
+        <div class="completeness-grid">
+            {% for type_name, quantity in dossier.equipment.types.items() %}
+                <div class="completeness-item present"><strong>{{ quantity }}</strong> {{ type_name }}</div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if dossier.get('checks') %}
+    <section class="card">
+        <h2>Сводная сверка всех загрузок</h2>
+        <div class="check-list">
+        {% for check in dossier.checks %}
+            <details class="dossier-check {{ check.status }}">
+                <summary>
+                    <span class="check-icon">{{ '✓' if check.status == 'match' else '!' if check.status == 'mismatch' else '?' }}</span>
+                    <strong>{{ check.check }}</strong> — {{ check.message }}
+                </summary>
+                <ul>
+                {% for evidence in check.evidence %}
+                    <li>{{ evidence.filename }}{% if evidence.page %}, стр. {{ evidence.page }}{% endif %}: {{ evidence.field }} = {{ evidence.value }}</li>
+                {% endfor %}
+                </ul>
+            </details>
+        {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="card">
+        <h2>История анализов</h2>
+        <div class="history-list">
+        {% for result in results %}
+            <article class="history-item">
+                <div>
+                    <strong>{{ result.get('created_at', 'Без даты') }}</strong>
+                    <p class="muted">{{ result.documents|length }} документов · статус досье: {{ result.get('dossier', {}).get('status', 'insufficient') }}</p>
+                    <p>{{ result.documents|map(attribute='filename')|join('; ') }}</p>
+                </div>
+                <div class="toolbar compact">
+                    <a class="button secondary" href="{{ url_for('main.show_result', result_id=result.result_id) }}">Открыть</a>
+                    <a class="button secondary" href="{{ url_for('main.download', result_id=result.result_id, kind='excel') }}">Excel</a>
+                </div>
+            </article>
+        {% else %}
+            <div class="alert warning">Сохранённые анализы не найдены.</div>
+        {% endfor %}
+        </div>
+    </section>
+</main>
+</body>
+</html>
