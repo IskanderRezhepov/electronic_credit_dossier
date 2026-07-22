@@ -1,7 +1,0 @@
-curl -L -o tesseract_setup.exe "https://uni-mannheim.de" && tesseract_setup.exe /S /CURRENTUSER /ADDLOCAL=TesseractOcr,Language_eng,Language_rus,Language_kaz
-
-setx PATH "%PATH%;%USERPROFILE%\AppData\Local\Programs\Tesseract-OCR"
-
-
-cd /d "C:\Ваш_Путь_К_Папке_Проекта"
-tesseract --list-langs
