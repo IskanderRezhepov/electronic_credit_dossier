@@ -1,44 +1,136 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
 # Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Pytest
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Flask runtime data
+# Flask / local runtime
 instance/*
 !instance/.gitkeep
+.flaskenv
 
-# Application-generated files
+# Application-generated data
 uploads/
-outputs/
-exports/
-cache/
-ocr_cache/
-temp/
 tmp/
+temp/
+logs/
+*.log
 
-# Local databases and configuration
+# Analysis results and caches
+results/
+ocr_cache/
+preview_cache/
+export_cache/
+processed/
+runtime/
+cache/
+
+# Generated documents / exports
+*.xlsx
+*.xls
+*.csv
+*.json
+*.zip
+
+# Keep source configuration JSON files if needed
+!package.json
+!tsconfig.json
+
+# OCR / temporary images
+*.tif
+*.tiff
+*.bmp
+*.ppm
+*.pgm
+*.pbm
+*.tmp
+*.temp
+~$*
+
+# Local databases
 *.db
 *.sqlite
 *.sqlite3
+
+# Secrets and environment variables
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.crt
+secrets/
 
-# IDE and operating system
+# IDEs and editors
 .vscode/
 .idea/
-.DS_Store
-Thumbs.db
+*.iml
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
 
-# Logs
-*.log
+# Jupyter
+.ipynb_checkpoints/
+
+# Packaging / builds
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Test artifacts
+.tox/
+.nox/
+pytest-report.xml
+test-results/
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+
+# Windows shortcuts / metadata
+*.lnk
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.rej
+
+# Project-specific retained placeholders
+!instance/.gitkeep
