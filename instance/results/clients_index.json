@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "clients": {
+    "030412650123": {
+      "client_key": "030412650123",
+      "iin_bin": "030412650123",
+      "name": "KBK",
+      "role_label_ru": "Заёмщик",
+      "created_at": "2026-07-23T06:34:43.126137+00:00",
+      "updated_at": "2026-07-23T06:35:10.311371+00:00",
+      "results": [
+        {
+          "result_id": "1da181e661864a23b430b98f9f3f8fa9",
+          "created_at": "2026-07-23T06:34:43.126137+00:00",
+          "updated_at": "2026-07-23T06:35:10.311371+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Соглашение об открытии кредитной линии"
+          ],
+          "filenames": [
+            "F485444319_Инд.форма Соглашения об открытии КЛ__рлеу 2 и 3 транш_фондирование_с 19.03.2026.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": "unchanged",
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "810412402091": {
+      "client_key": "810412402091",
+      "iin_bin": "810412402091",
+      "name": "ИП «РАСУЛ»",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-23T06:35:51.445777+00:00",
+      "updated_at": "2026-07-23T06:36:00.266874+00:00",
+      "results": [
+        {
+          "result_id": "0403c6a418ff4c64a8f1c49165512860",
+          "created_at": "2026-07-23T06:35:51.445777+00:00",
+          "updated_at": "2026-07-23T06:36:00.266874+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Дополнительное соглашение"
+          ],
+          "filenames": [
+            "F-1632560685_Xerox Scan_30062026150636.PDF"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": "unchanged",
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "140740024684": {
+      "client_key": "140740024684",
+      "iin_bin": "140740024684",
+      "name": "ТОО «Санж-ар»",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-23T06:36:23.465741+00:00",
+      "updated_at": "2026-07-23T06:36:26.153382+00:00",
+      "results": [
+        {
+          "result_id": "a8b9dfd51fc04c0382250b695a4ac602",
+          "created_at": "2026-07-23T06:36:23.465741+00:00",
+          "updated_at": "2026-07-23T06:36:26.153382+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор финансового лизинга / заявление о присоединении"
+          ],
+          "filenames": [
+            "F1461061293_Договор лизинга ТОО Санж-ар.pdf"
+          ],
+          "dossier_status": "ok",
+          "review_status": "reviewed",
+          "equipment_quantity": 1
+        }
+      ]
+    },
+    "070140005046": {
+      "client_key": "070140005046",
+      "iin_bin": "070140005046",
+      "name": "IFC COLOS",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-23T06:37:57.323147+00:00",
+      "updated_at": "2026-07-23T06:38:04.969658+00:00",
+      "results": [
+        {
+          "result_id": "16f1b7a984d34a93a8d124dff8dfe40e",
+          "created_at": "2026-07-23T06:37:57.323147+00:00",
+          "updated_at": "2026-07-23T06:38:04.969658+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор финансового лизинга / заявление о присоединении"
+          ],
+          "filenames": [
+            "F-1377758608_ДФЛ IFC Colos.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": "unchanged",
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "250240012398": {
+      "client_key": "250240012398",
+      "iin_bin": "250240012398",
+      "name": "Guibao",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-23T06:39:41.085366+00:00",
+      "updated_at": "2026-07-23T06:39:41.085366+00:00",
+      "results": [
+        {
+          "result_id": "0931fe9735cd4e5596b0a67aa84fbb9e",
+          "created_at": "2026-07-23T06:39:41.085366+00:00",
+          "updated_at": "2026-07-23T06:39:41.085366+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор финансового лизинга / заявление о присоединении"
+          ],
+          "filenames": [
+            "F2142750254_Заявление_Guibao kz.pdf"
+          ],
+          "dossier_status": "ok",
+          "review_status": null,
+          "equipment_quantity": 1
+        }
+      ]
+    }
+  }
+}
