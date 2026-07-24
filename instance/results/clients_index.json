@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "clients": {
+    "020640003099": {
+      "client_key": "020640003099",
+      "iin_bin": "020640003099",
+      "name": "ТОО «Техностандарт-М»",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-24T06:21:41.496128+00:00",
+      "updated_at": "2026-07-24T06:21:41.496128+00:00",
+      "results": [
+        {
+          "result_id": "b3738cedb78941abbb2d1db6747bef26",
+          "created_at": "2026-07-24T06:21:41.496128+00:00",
+          "updated_at": "2026-07-24T06:21:41.496128+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор / полис страхования"
+          ],
+          "filenames": [
+            "F2067902421_1. Договор страхования ТОО ТЕХНОСТАНДАРТ-М_4 ед.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": null,
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "720217302650": {
+      "client_key": "720217302650",
+      "iin_bin": "720217302650",
+      "name": "ИП «Еспулов»",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-24T06:22:03.682566+00:00",
+      "updated_at": "2026-07-24T06:22:03.682566+00:00",
+      "results": [
+        {
+          "result_id": "2128595a867740978c40a91c9e77e8fe",
+          "created_at": "2026-07-24T06:22:03.682566+00:00",
+          "updated_at": "2026-07-24T06:22:03.682566+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор / полис страхования"
+          ],
+          "filenames": [
+            "F-528936903_Договор_КАСКО.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": null,
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "030412650123": {
+      "client_key": "030412650123",
+      "iin_bin": "030412650123",
+      "name": "ИП «KBK BETON»",
+      "role_label_ru": "Заёмщик",
+      "created_at": "2026-07-24T06:22:41.595712+00:00",
+      "updated_at": "2026-07-24T06:22:41.595712+00:00",
+      "results": [
+        {
+          "result_id": "ec26ae95144e4cc0b7cff6f8ef3dd0f8",
+          "created_at": "2026-07-24T06:22:41.595712+00:00",
+          "updated_at": "2026-07-24T06:22:41.595712+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Соглашение об открытии кредитной линии"
+          ],
+          "filenames": [
+            "F485444319_Инд.форма Соглашения об открытии КЛ__рлеу 2 и 3 транш_фондирование_с 19.03.2026.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": null,
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "070140005046": {
+      "client_key": "070140005046",
+      "iin_bin": "070140005046",
+      "name": "IFC COLOS",
+      "role_label_ru": "Лизингополучатель",
+      "created_at": "2026-07-24T06:23:57.149286+00:00",
+      "updated_at": "2026-07-24T06:23:57.149286+00:00",
+      "results": [
+        {
+          "result_id": "533e1bca44f7475e99ed334b65fc168a",
+          "created_at": "2026-07-24T06:23:57.149286+00:00",
+          "updated_at": "2026-07-24T06:23:57.149286+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор финансового лизинга / заявление о присоединении"
+          ],
+          "filenames": [
+            "F-1377758608_ДФЛ IFC Colos.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": null,
+          "equipment_quantity": 0
+        }
+      ]
+    },
+    "161040015339": {
+      "client_key": "161040015339",
+      "iin_bin": "161040015339",
+      "name": "ТОО «АгроТехМенеджмент",
+      "role_label_ru": "Получатель",
+      "created_at": "2026-07-24T06:24:23.006180+00:00",
+      "updated_at": "2026-07-24T06:24:40.982816+00:00",
+      "results": [
+        {
+          "result_id": "521204c61864437289786228f4daf154",
+          "created_at": "2026-07-24T06:24:40.982816+00:00",
+          "updated_at": "2026-07-24T06:24:40.982816+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Платёжное поручение"
+          ],
+          "filenames": [
+            "F1673280244_ПП КАСКО №3654_АО 'Страховая Компания 'Sinoasia B&R (Синоазия БиЭндАр)'_900 201.00__07.07.2026 11_14_10 (1).pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": null,
+          "equipment_quantity": 0
+        },
+        {
+          "result_id": "a0eb2d11f9f04ea9bf432f73b5c4027f",
+          "created_at": "2026-07-24T06:24:23.006180+00:00",
+          "updated_at": "2026-07-24T06:24:23.006180+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Договор финансового лизинга / заявление о присоединении"
+          ],
+          "filenames": [
+            "F-945442265_Договор лизинга АТМ.pdf"
+          ],
+          "dossier_status": "ok",
+          "review_status": null,
+          "equipment_quantity": 3
+        }
+      ]
+    },
+    "130940024372": {
+      "client_key": "130940024372",
+      "iin_bin": "130940024372",
+      "name": "KazPromService",
+      "role_label_ru": "Получатель",
+      "created_at": "2026-07-24T06:24:59.160441+00:00",
+      "updated_at": "2026-07-24T06:24:59.160441+00:00",
+      "results": [
+        {
+          "result_id": "1a92fbe15ad842438bcc8c700f63101f",
+          "created_at": "2026-07-24T06:24:59.160441+00:00",
+          "updated_at": "2026-07-24T06:24:59.160441+00:00",
+          "document_count": 1,
+          "document_types": [
+            "Дополнительное соглашение"
+          ],
+          "filenames": [
+            "F-698246547_Доп согл Казпромсервис.pdf"
+          ],
+          "dossier_status": "insufficient",
+          "review_status": null,
+          "equipment_quantity": 0
+        }
+      ]
+    }
+  }
+}
