@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Электронное кредитное досье</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="container">
+    <div class="toolbar"><a class="button secondary" href="{{ url_for('main.history') }}">История и клиенты</a></div>
+    <section class="card hero">
+        <h1>Анализатор электронного кредитного досье</h1>
+        <p>
+            Поддерживает цифровые PDF, сканированные PDF и фотографии документов.
+            Для сканов и фото автоматически используется OCR.
+        </p>
+
+        {% if error %}
+            <div class="alert error">{{ error }}</div>
+        {% endif %}
+
+        <form method="post" action="{{ url_for('main.analyze') }}" enctype="multipart/form-data">
+            <label class="upload">
+                <span>Документы</span>
+                <input
+                    type="file"
+                    name="documents"
+                    multiple
+                    required
+                    accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.webp"
+                >
+            </label>
+            <fieldset class="analysis-mode">
+                <legend>Режим анализа</legend>
+                {% for mode_key, mode in analysis_modes.items() %}
+                    <label class="mode-option">
+                        <input type="radio" name="analysis_mode" value="{{ mode_key }}" {{ 'checked' if mode_key == 'auto' else '' }}>
+                        <span>
+                            <strong>{{ mode.label_ru }}</strong>
+                            <small>
+                                {% if mode_key == 'auto' %}Каждая страница получает собственный режим: цифровой, быстрый или точный.
+                                {% elif mode_key == 'fast' %}Меньше OCR-проходов, быстрее для черновой проверки.
+                                {% elif mode_key == 'accurate' %}Больше OCR-проходов и повышенное разрешение.
+                                {% else %}Баланс скорости и качества для обычной работы.{% endif %}
+                            </small>
+                        </span>
+                    </label>
+                {% endfor %}
+            </fieldset>
+            <button type="submit">Проанализировать</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Поддерживаемые форматы</h2>
+        <p>{{ supported_formats }}</p>
+
+        <h2>Распознаваемые типы</h2>
+        <ul>
+            <li>договор купли-продажи;</li>
+            <li>договор финансового лизинга;</li>
+            <li>акт приёма-передачи;</li>
+            <li>график платежей;</li>
+            <li>дополнительное соглашение;</li>
+            <li>квитанция о подписании;</li>
+            <li>неизвестный документ — с универсальным извлечением сумм, ИИН/БИН, VIN, IBAN и реквизитов.</li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
